@@ -1,11 +1,12 @@
 package rs.raf.ast;
 
-public class ReturnStatement extends Tree{
+public class ReturnStatement extends Statement {
 
     private Expression value;
 
     public ReturnStatement(Location location, Expression expression) {
         super(location);
+        this.value = expression;
     }
 
     @Override
